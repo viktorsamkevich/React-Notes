@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+.app {
+	height: 100%;
+	width: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 967px;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+}
+ul {
+	list-style: none;
+}
+p, h1, h2, h3, span {
+	margin:  0;
+	padding: 0;
+}
+/*Header*/
+.header {
+	height: 60px;
+	background: #1369b4;
+}
+.header__heading {
+	margin: 0;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+	position: relative;
+	padding-top: 15px;
+	padding-left: 60px;
+}
+.header__heading::before {
+	content: url(logo.png);
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+
+/*Form*/
+.form {
+	margin-top: 25px;
+	width: 100%;
+
+	position: relative;
+	overflow: hidden;
+}
+.form__heading {
+	height: 38px;
+	background: #1369b4;
+	border-radius: 5px 5px 0 0;
+}
+.form__heading h2 {
+	margin: 0;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 38px;
+	color: #ffffff;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.form__content {
+	height: 285px;
+	border: 1px solid #1369b4;
+	border-radius: 0 0 5px 5px;
+	position: absolute;
+	top: 38px;
+	left: 100%;
+	transition: 0.6s;
+}
+.open {
+	left: 0;
+	top: 0;
+	position: relative;
+}
+.form__content-list {
+	margin-top: 20px;
+}
+.form__content-list li {
+	margin-bottom: 10px;
+	position: relative;
+}
+.form__content-list li label {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	width: 100px;
+	margin-right: 20px;
+	display: inline-block;
+	float: left;
+	text-align: right;
+}
+.form__content-time {
+
+}
+.date {
+	float: left;
+}
+.form__content-list li .petName, .form__content-list li .petOwner, .form__content-list li .textarea {
+	width: 750px;
+	padding: 3px 8px;
+}
+.form__content-list li input {
+	height: 15px;
+	width: 306px;
+	padding: 3px 8px;
+	border: 1px solid #1369b4;
+	border-radius: 5px;
+}
+.form__content-list li textarea {
+	border: 1px solid #1369b4;
+	border-radius: 5px;
+}
+textarea::-webkit-input-placeholder { 
+
+}
+
+.form__content-list li .btnAdd {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	color: white;
+	background: #1369b4;
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	right: 35px;
+	cursor: pointer;
+}
+/*Search*/ /* https://webformyself.com/css-eksperimenty-s-polem-i-knopkoj-poiska/ */
+.search {
+	margin: 20px 25%;
+	overflow: hidden;
+	width: 470px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.search input {
+	width: 470px;
+	height: 30px;
+	font-size: 14px;
+	padding-left: 15px;
+	border: 1px solid #1369b4;
+	border-radius: 5px;
+}
+.search select {
+	border: 1px solid #1468ae;
+	border-radius: 0 5px 5px 0;
+	background: #1468ae;
+	height: 30px;
+	width: 80px;
+	color: #ffffff;
+	font-size: 12px;
+	margin-left: -81px;
+	vertical-align: top;
+}
+
+/*Notes*/
+.notes {
+	margin-top: 20px;
+	padding: 0 50px 0 50px;
+}
+.notes__item {
+	border-bottom: 1px solid #e7e7e7;
+}
+.notes__item ul {
+	position: relative;
+	padding: 0px;
+}
+.notes__item ul li {
+	display: inline-block;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.notes__item-close {
+	width: 20px;
+}
+.notes__item-close  button {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: red;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.notes__item-content {
+	width: 650px;
+}
+.notes__item-content h3 {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 18px;
+	color: #1468ae;
+}
+.notes__item-content p {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 18px;
+}
+.notes__item-content .span__owner {
+	color: green;
+}
+.notes__item-date {
+	width: 150px;
+}
+.notes__item-date p {
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 16px;
+	font-style: italic;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
